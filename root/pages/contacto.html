@@ -50,41 +50,42 @@
 		</nav>
 
 	</header>
-	<section class="page-section" id="contact">
-		<div class="container-fluid">
-			<div class="text-center" class="color">
-				<h2 class="section-heading text-uppercase" style="color: white;">Contactenos</h2>
-				<h3 class="section-subheading" style="color:black;">Solicite asistencia</h3>
+	<div class="container-fluid px-0 servicios-frame"></div>
+	<section class="contact container-fluid h-100" id="contact">
+			<div class="container-fluid">
+				<div class="text-center" class="color">
+					<h2 class="section-heading text-uppercase" style="color: white;">Contactenos</h2>
+					<h3 class="section-subheading" style="color:black;">Solicite asistencia</h3>
+				</div>
+				<form id="contactForm" name="sentMessage" novalidate="novalidate">
+						<div class="row align-items-stretch mb-5">
+							<div class="col-md-6">
+								<div class="form-group">
+									<input class="form-control" id="name" type="text" placeholder="Nombre y Apellido *" required="required" data-validation-required-message="Por favor ingrese su nombre." />
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group">
+									<input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Por favor ingrese su email ." />
+									<p class="help-block text-danger"></p>
+								</div>
+								<div class="form-group mb-md-0">
+									<input class="form-control" id="phone" type="tel" placeholder="Telefono *" required="required" data-validation-required-message="Por favor ingrese su numero de telefono." />
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="form-group form-group-textarea mb-md-0">
+									<textarea class="form-control" id="message" placeholder="Escriba aqui su consulta *" required="required" data-validation-required-message="Por favor ingrese su consulta."></textarea>
+									<p class="help-block text-danger"></p>
+								</div>
+							</div>
+						</div>
+					<div class="text-center">
+						<div id="success"></div>
+						<button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar formulario</button>
+					</div>
+				</form>
 			</div>
-			<form id="contactForm" name="sentMessage" novalidate="novalidate">
-				<div class="row align-items-stretch mb-5">
-					<div class="col-md-6">
-						<div class="form-group">
-							<input class="form-control" id="name" type="text" placeholder="Nombre y Apellido *" required="required" data-validation-required-message="Por favor ingrese su nombre." />
-							<p class="help-block text-danger"></p>
-						</div>
-						<div class="form-group">
-							<input class="form-control" id="email" type="email" placeholder="Email *" required="required" data-validation-required-message="Por favor ingrese su email ." />
-							<p class="help-block text-danger"></p>
-						</div>
-						<div class="form-group mb-md-0">
-							<input class="form-control" id="phone" type="tel" placeholder="Telefono *" required="required" data-validation-required-message="Por favor ingrese su numero de telefono." />
-							<p class="help-block text-danger"></p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group form-group-textarea mb-md-0">
-							<textarea class="form-control" id="message" placeholder="Escriba aqui su consulta *" required="required" data-validation-required-message="Por favor ingrese su consulta."></textarea>
-							<p class="help-block text-danger"></p>
-						</div>
-					</div>
-				</div>
-				<div class="text-center">
-					<div id="success"></div>
-					<button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Enviar formulario</button>
-				</div>
-			</form>
-		</div>
 	</section>
 	<footer class="bg-light py-5">
 		<div class="container"><div class="small text-center text-muted">Copyright © 2020 - Gordillo Ulises</div></div>
