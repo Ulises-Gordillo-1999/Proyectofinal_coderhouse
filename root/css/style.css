@@ -104,3 +104,9 @@ section#contact {
 
 #galeria img:hover {
   border: 5px solid #f7f7f7; }
+
+.button {
+    display: flex;
+    float: right;
+    
+}
